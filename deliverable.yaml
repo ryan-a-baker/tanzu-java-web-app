@@ -1,0 +1,48 @@
+apiVersion: carto.run/v1alpha1
+kind: Deliverable
+metadata:
+  creationTimestamp: "2022-03-30T20:29:46Z"
+  generation: 1
+  labels:
+    app.kubernetes.io/component: deliverable
+    app.kubernetes.io/part-of: tanzu-java-web-app
+    app.tanzu.vmware.com/deliverable-type: web
+    apps.tanzu.vmware.com/has-tests: "true"
+    apps.tanzu.vmware.com/workload-type: web
+    carto.run/cluster-template-name: deliverable-template
+    carto.run/resource-name: deliverable
+    carto.run/supply-chain-name: source-test-scan-to-url
+    carto.run/template-kind: ClusterTemplate
+    carto.run/workload-name: tanzu-java-web-app-2
+    carto.run/workload-namespace: default
+  name: tanzu-java-web-app-2
+  namespace: default
+  resourceVersion: "24104356"
+  uid: 0f37129c-5455-47e4-852d-f99cd58a24c8
+spec:
+  source:
+    image: harbor.ryanbaker.io/tap-apps/tanzu-java-web-app-2-default-bundle:dfe9117d-c69e-428d-8a57-754e4e0bef2c
+status:
+  conditions:
+  - lastTransitionTime: "2022-03-30T20:29:46Z"
+    message: 'no delivery found where full selector is satisfied by labels: map[app.kubernetes.io/component:deliverable
+      app.kubernetes.io/part-of:tanzu-java-web-app app.tanzu.vmware.com/deliverable-type:web
+      apps.tanzu.vmware.com/has-tests:true apps.tanzu.vmware.com/workload-type:web
+      carto.run/cluster-template-name:deliverable-template carto.run/resource-name:deliverable
+      carto.run/supply-chain-name:source-test-scan-to-url carto.run/template-kind:ClusterTemplate
+      carto.run/workload-name:tanzu-java-web-app-2 carto.run/workload-namespace:default]'
+    reason: DeliveryNotFound
+    status: "False"
+    type: DeliveryReady
+  - lastTransitionTime: "2022-03-30T20:29:46Z"
+    message: 'no delivery found where full selector is satisfied by labels: map[app.kubernetes.io/component:deliverable
+      app.kubernetes.io/part-of:tanzu-java-web-app app.tanzu.vmware.com/deliverable-type:web
+      apps.tanzu.vmware.com/has-tests:true apps.tanzu.vmware.com/workload-type:web
+      carto.run/cluster-template-name:deliverable-template carto.run/resource-name:deliverable
+      carto.run/supply-chain-name:source-test-scan-to-url carto.run/template-kind:ClusterTemplate
+      carto.run/workload-name:tanzu-java-web-app-2 carto.run/workload-namespace:default]'
+    reason: DeliveryNotFound
+    status: "False"
+    type: Ready
+  deliveryRef: {}
+  observedGeneration: 1
